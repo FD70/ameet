@@ -1,0 +1,9 @@
+:root {
+    --color-c-main: rgb(215, 133, 25);
+}
+
+.test {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-c-main);
+}
