@@ -1,9 +1,41 @@
 :root {
     --color-c-main: rgb(215, 133, 25);
+    --color-c-second: #fdfdfd;
 }
-
-.test {
-    width: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px dotted navy;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background-color: #eee;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
     height: 100px;
+    background-color: var(--color-c-second);
+}
+.footer {
+    height: 100px;
+    background-color: var(--color-c-second);
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.content > .side-menu {
+    width: 25%;
     background-color: var(--color-c-main);
+}
+.content > .items {
+    width: 70%;
+}
+.items > .item {
+    height: 100px;
 }
